@@ -15,7 +15,7 @@ function ActividadesGim() {
       nombre: "Zumba",
       descripcion: "Clase de baile para quemar calorías",
       duracion: "1 hora",
-      img: "https://play-lh.googleusercontent.com/-WdNmEfqeTBHDI72SztgkhozgPLyl5k7AOYPZR8yAfCgK0nxMPdT1B2Z9MdORFenBrQ",
+      img: "https://cdn-1.webcatalog.io/catalog/zumba/zumba-icon-filled-256.png?v=1714777851660",
       display: false,
     },
     {
@@ -108,8 +108,8 @@ function ActividadesGim() {
               <img
                 onClick={() => handleMostrarDescripcion(actividad.id)}
                 style={{
-                  width: "350px",
-                  height: "250px",
+                  width: "150px",
+                  height: "150px",
                   cursor: "pointer",
                 }}
                 src={actividad.img}

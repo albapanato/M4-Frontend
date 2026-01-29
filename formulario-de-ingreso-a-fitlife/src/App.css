@@ -67,7 +67,7 @@ h2 {
 }
 .Formulario {
   margin: auto;
-  width: fit-content;
+  width: 75%;
   max-width: 92vw;
   font-size: 20px;
   text-align: center;
@@ -99,7 +99,7 @@ h2 {
   }
   .form {
     margin: auto;
-    width: 300px;
+    width: 400px;
     max-width: 90vw;
     /* background-color: rgba(3, 41, 59, 0.6); */
 
@@ -110,6 +110,7 @@ h2 {
     }
     input {
       font-size: 18px;
+      padding: 18px;
     }
     select {
       font-size: 18px;
@@ -137,6 +138,8 @@ h2 {
     height: 30px;
     color: rgb(90, 84, 84);
     font-size: 18px;
+    width: 75%;
+    box-sizing: border-box;
   }
   select {
     background-color: #d4d9dd;
@@ -144,6 +147,8 @@ h2 {
     text-align: center;
     color: rgb(90, 84, 84);
     padding: 10px;
+    width: 100%;
+    box-sizing: border-box;
   }
   button {
     margin: 15px;
@@ -159,7 +164,7 @@ h2 {
 
 .ContenedorActividades {
   margin: auto;
-  width: fit-content;
+  width: 75%;
   max-width: 92vw;
   font-size: 20px;
   text-align: center;
@@ -182,7 +187,7 @@ h2 {
     margin: auto;
     padding-top: 10px;
     align-content: center;
-    width: 350px;
+    width: 150px;
     height: 75px;
     border-radius: 0%;
     background-color: hsla(195, 64%, 11%, 0.842);

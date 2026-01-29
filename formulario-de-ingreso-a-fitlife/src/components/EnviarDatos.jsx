@@ -1,6 +1,5 @@
 const enviarDatos = async (values) => {
   console.log("Recibimos la info del componente padre:", values);
-
   const respuesta = await fetch("https://jsonplaceholder.typicode.com/posts", {
     method: "POST",
     headers: {
