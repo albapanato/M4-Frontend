@@ -1,0 +1,324 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  border-radius: 6px;
+  text-align: center;
+}
+body {
+  background-color: rgb(23, 24, 31);
+  min-height: 100vh;
+}
+.fondo {
+  width: fit-content;
+  opacity: 85%;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+  z-index: -999;
+}
+.fondo2 {
+  width: fit-content;
+  height: 140vh;
+  opacity: 85%;
+  overflow: hidden;
+  position: absolute;
+  top: 180vh;
+  left: 0;
+  object-fit: cover;
+  z-index: -999;
+}
+
+.fondo3 {
+  height: 140vh;
+  opacity: 45%;
+  overflow: hidden;
+  position: absolute;
+  top: 360vh;
+  left: 0;
+  object-fit: contain;
+  z-index: -999;
+}
+.App {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 100vh;
+  gap: 24px;
+  width: 100%;
+}
+
+.error {
+  color: #f0975b;
+}
+h2 {
+  background: linear-gradient(to right, #0a969b, #63d109);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  font-size: 60px;
+  font-weight: 600;
+  padding: 5px;
+}
+.Formulario {
+  margin: auto;
+  width: fit-content;
+  max-width: 92vw;
+  font-size: 20px;
+  text-align: center;
+  padding: 20px;
+  line-height: 2;
+  color: rgb(231, 226, 226);
+  background-color: rgba(18, 47, 61, 0.6);
+  margin-bottom: 10px;
+
+  .perfil {
+    width: 200px;
+    border-radius: 50%;
+    margin: auto;
+  }
+  .caja {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+  }
+  .caja h2 {
+    font-size: 36px;
+    line-height: 1.2;
+  }
+  h3 {
+    font-size: 30px;
+    color: #cdff04;
+    text-shadow: 2px 4px 16px black;
+  }
+  .form {
+    margin: auto;
+    width: 300px;
+    max-width: 90vw;
+    /* background-color: rgba(3, 41, 59, 0.6); */
+
+    .caja {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 15px;
+    }
+    input {
+      font-size: 18px;
+    }
+    select {
+      font-size: 18px;
+    }
+  }
+
+  .flex {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: auto;
+    input {
+      margin-top: 5px;
+      margin-right: 8px;
+      width: 20px;
+    }
+  }
+  label {
+    text-shadow: 2px 4px 16px black;
+    margin-top: 10px;
+  }
+  input {
+    background-color: #d4d9dd;
+    padding: 6px;
+    height: 30px;
+    color: rgb(90, 84, 84);
+    font-size: 18px;
+  }
+  select {
+    background-color: #d4d9dd;
+    font-size: 24px;
+    text-align: center;
+    color: rgb(90, 84, 84);
+    padding: 10px;
+  }
+  button {
+    margin: 15px;
+    cursor: pointer;
+    border: solid 4px rgb(229, 245, 4);
+    width: 200px;
+    padding: 8px;
+    background-color: hsla(200, 56%, 15%);
+    color: #e5f504;
+    font-size: 30px;
+  }
+}
+
+.ContenedorActividades {
+  margin: auto;
+  width: fit-content;
+  max-width: 92vw;
+  font-size: 20px;
+  text-align: center;
+  padding: 20px;
+  line-height: 2;
+  color: rgb(231, 226, 226);
+  background-color: rgba(18, 47, 61, 0.6);
+
+  .tituloActividad {
+    font-size: 38px;
+    color: #5ecf03;
+    text-shadow: 2px 4px 16px black;
+  }
+  .fantasma {
+    height: 0;
+  }
+  .infoActividad {
+    color: white;
+    text-shadow: 2px 6px 8px black;
+    margin: auto;
+    padding-top: 10px;
+    align-content: center;
+    width: 350px;
+    height: 75px;
+    border-radius: 0%;
+    background-color: hsla(195, 64%, 11%, 0.842);
+    font-size: 35px;
+    position: relative;
+    left: 0;
+    top: -210px;
+
+    z-index: 1;
+  }
+}
+
+.BotonActividades {
+  margin: 15px;
+  cursor: pointer;
+  border: solid 4px #e5f504;
+  padding: 8px;
+  background-color: #112d3c;
+  color: #e5f504;
+  font-size: 20px;
+}
+
+.Actividades {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 16px;
+}
+
+.pregunta {
+  font-size: 38px;
+  color: #5ecf03;
+  text-shadow: 2px 4px 16px black;
+}
+
+.infoProfesor {
+  font-size: 24px !important;
+  line-height: 1.4;
+  max-width: 36ch;
+  margin: 0 auto;
+  text-shadow: 2px 6px 8px black;
+}
+
+@media (max-width: 768px) {
+  .App {
+    align-items: stretch;
+  }
+
+  .fondo,
+  .fondo2,
+  .fondo3 {
+    width: 100vw;
+    height: 100vh;
+    left: 0;
+    object-fit: cover;
+  }
+
+  h2 {
+    font-size: 42px;
+  }
+
+  .Formulario,
+  .ContenedorActividades {
+    width: 100%;
+    max-width: 100%;
+    margin: 0;
+    border-radius: 0;
+    padding: 0;
+  }
+
+  .Formulario {
+    font-size: 18px;
+  }
+
+  .Formulario .perfil {
+    width: 160px;
+  }
+
+  .Formulario h3 {
+    font-size: 24px;
+  }
+
+  .Formulario .caja h2 {
+    font-size: 28px;
+  }
+
+  .Formulario .form {
+    width: 100%;
+  }
+
+  .Formulario input,
+  .Formulario select {
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .BotonActividades {
+    font-size: 18px;
+  }
+
+  .ContenedorActividades .tituloActividad,
+  .pregunta {
+    font-size: 28px;
+  }
+
+  .ContenedorActividades .infoActividad {
+    width: 260px;
+    height: 60px;
+    font-size: 24px;
+    top: -160px;
+  }
+
+  .infoProfesor {
+    font-size: 18px !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .Formulario {
+    font-size: 16px;
+  }
+
+  .Formulario .caja h2 {
+    font-size: 24px;
+  }
+
+  .Formulario button,
+  .BotonActividades {
+    width: 200px;
+    font-size: 18px;
+  }
+
+  .ContenedorActividades .infoActividad {
+    width: 220px;
+    height: 54px;
+    font-size: 20px;
+    top: -140px;
+  }
+}
